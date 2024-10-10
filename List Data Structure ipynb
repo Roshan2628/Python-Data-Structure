@@ -1,0 +1,3009 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "669461ff-305f-4719-8fc5-12795659ea0b",
+   "metadata": {},
+   "source": [
+    "## List Data Structure Sample Questions & Answer ##"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ffb58f41-6bcd-49da-b4ce-c7ea291a8303",
+   "metadata": {},
+   "source": [
+    "### 1. Write a Python program to sum all the items \n",
+    "Sample Output \n",
+    "[1,7,-10,34,2,-8] \n",
+    "Sum all the items = 26 "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "e0a37d11-a0ef-4c92-90b4-19f1001f08ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 7, -10, 34, 2, -8]\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "number = [1,7,-10,34,2,-8]\n",
+    "print(number)\n",
+    "print(type(number))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "3c51072c-ddb9-414e-b5d6-3fb9334356d8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Sum all the items - 26\n"
+     ]
+    }
+   ],
+   "source": [
+    "Sum_of_Number = sum(number)\n",
+    "print('Sum all the items -',Sum_of_Number)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f136a8e3-1110-4fe8-8cdb-194fa10ef133",
+   "metadata": {},
+   "source": [
+    "### 2. Write a Python program to multiply all the items in a list \n",
+    "Sample Output \n",
+    "[3,4,5,4,7] \n",
+    "Multiply all the items in a list : 1680 "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "006a544c-f2c8-488c-b8df-851b16e13937",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Ans =\n",
+    "numbers = [3,4,5,4,7] \n",
+    "print(numbers)\n",
+    "print(type(numbers))\n",
+    "import math  ## importing Math Funcation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "4563e4c5-0bc0-4bff-bce5-c714ed707eba",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Multiply all the items in a list -  3\n",
+      "Multiply all the items in a list -  12\n",
+      "Multiply all the items in a list -  60\n",
+      "Multiply all the items in a list -  240\n",
+      "Multiply all the items in a list -  1680\n"
+     ]
+    }
+   ],
+   "source": [
+    "product =1\n",
+    "for num in numbers:\n",
+    "    product *=num\n",
+    "    print(\"Multiply all the items in a list - \" , product)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9b760c95-0feb-4b8f-aca7-8b3a3a78ec59",
+   "metadata": {},
+   "source": [
+    "### 3. Write a Python program to get the largest number from a list \n",
+    "Sample Output \n",
+    "[1,7,10,34,2,8] \n",
+    "Largest Number : 34 "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "b158c503-faa9-49ba-9c62-7535521c04c6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 7, 10, 34, 2, 8]\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "numbers = [1,7,10,34,2,8]\n",
+    "print(numbers)\n",
+    "print(type(numbers))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "7008d6e2-cc84-4a17-9453-b4c6187232d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Largest Number -  34\n"
+     ]
+    }
+   ],
+   "source": [
+    "Lagest_n = max(numbers) ## using Max funcation \n",
+    "print('Largest Number - ',Lagest_n)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c78d3c7d-ef71-4dc4-a476-5796378649f5",
+   "metadata": {},
+   "source": [
+    "### 4. Write a Python program to get the smallest number from a list \n",
+    "Sample Output \n",
+    "[51,7,10,34,2,8] \n",
+    "Smallest Number : 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "70b94d57-b1a4-4191-a993-925586eace28",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 7, 10, 34, 2, 8]\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [1,7,10,34,2,8]\n",
+    "print(numbers)\n",
+    "print(type(numbers))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "64ca28bb-5f16-4003-9c9b-be93578fec22",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Samllest Number -  1\n"
+     ]
+    }
+   ],
+   "source": [
+    "smallest_n = min(numbers) ## using Minmum funcation \n",
+    "print('Samllest Number - ',smallest_n)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "507e14d8-3c02-4b3b-aa22-a1cda28a9ac3",
+   "metadata": {},
+   "source": [
+    "### 5. Write a Python program to count the number of strings where the string length is 2 or \n",
+    "more and the first and last character are same from a given list of strings \n",
+    "Sample Output \n",
+    "List Exercise \n",
+    " \n",
+    "['abc', 'xyz', 'aba', '1221'] \n",
+    "First and Last Character are same : 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "51d7e2d1-81a4-4709-8a84-28674a08fbc1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['abc', 'xyz', 'aba', '1221']\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "##Ans =\n",
+    "string = ['abc', 'xyz', 'aba', '1221']\n",
+    "print(string)\n",
+    "print(type(string))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "b4a41954-5d62-4c41-85e5-9dadb28b0002",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "First and Last Character are same - 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "count = 0   ## using if & count funcation \n",
+    "for s in string :\n",
+    "    if len(s)>=2 and s[0] == s[-1]:\n",
+    "        count+=1\n",
+    "print ('First and Last Character are same -',count)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f95a0f5d-f5b0-4c4e-82a7-42b16cbc0d51",
+   "metadata": {},
+   "source": [
+    "### 6. Write a Python program to remove duplicates from a list \n",
+    "Sample Output \n",
+    "[1,2,3,7,2,1,5,6,4,8,5,4] \n",
+    "{1,2,3,4,5,6,7,8}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "a78fe2c3-3df3-42bc-b9c6-e316441d7a2c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 7, 2, 1, 5, 6, 4, 8, 5, 4]\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "list = [1,2,3,7,2,1,5,6,4,8,5,4]\n",
+    "print(list)\n",
+    "print(type(list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "677ff878-6571-4d07-b58c-c97e6acbdc3c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "unique_numbers = set(list) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "3d018892-f962-4803-a02e-da5276a1f1fb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "removing duplicate -  {1, 2, 3, 4, 5, 6, 7, 8}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('removing duplicate - ',unique_numbers)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e8a272ee-f6dc-4a1e-9f5d-fc28eebf28bc",
+   "metadata": {},
+   "source": [
+    "### 7. Write a Python program to check a list is empty or not \n",
+    "Sample Output \n",
+    "[34,45,6,5,4,56,7] \n",
+    "List is Not Empty"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "920aae50-fed1-46cf-9f3d-bc0b66959811",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[34, 45, 6, 5, 4, 56, 7]\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans =\n",
+    "number = [34,45,6,5,4,56,7]\n",
+    "print(number)\n",
+    "print(type(number))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "c7a99060-2ac5-493a-938f-0dfb0203849b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List is not empty\n"
+     ]
+    }
+   ],
+   "source": [
+    "if not number :\n",
+    "    print('List is  empty')\n",
+    "else:\n",
+    "    print('List is not empty')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9eb4e99d-fa2d-41b8-b2b3-25fa73a24509",
+   "metadata": {},
+   "source": [
+    "### 8. Write a Python program to clone or copy a list \n",
+    "Sample Output \n",
+    "[10, 22, 44, 23, 4] \n",
+    "Clone or Copy a List : [10, 22, 44, 23, 4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "f6c78429-16fa-42ac-b57d-c9b3204a00b8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### Ans =\n",
+    "x = [10, 22, 44, 23, 4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "9ddf70ac-986a-473e-8b7f-9bab5561e726",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "out is clone list - [10, 22, 44, 23, 4]\n",
+      "out is clone list - [10, 22, 44, 23, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "y = x\n",
+    "print('out is clone list -',x)\n",
+    "\n",
+    "print('out is clone list -',y)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1990770b-aae4-47c2-879b-843c10ace9e3",
+   "metadata": {},
+   "source": [
+    " ### 9. Write a Python program to find the list of words that are longer than n from a given list of words \n",
+    "Sample Output \n",
+    "Find the List of Words that are Longer than n from a given List of Words \n",
+    "Given value of n = 4 \n",
+    "['Words', 'Longer', 'given', 'Words']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "197241b8-f4a3-494d-a136-6e8da0fa32e7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Words that are Longer than n from a given List of Words']\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "###--Ans\n",
+    "words = ['Words that are Longer than n from a given List of Words']\n",
+    "print(words)\n",
+    "print(type(words))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "238bf39a-0963-486e-959c-6a318ac2079a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Find the List of Words that are Longer than n from a given List of Words\n",
+      "Given value of n = 4\n",
+      "['Words', 'Longer', 'given', 'Words']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Sample list of words\n",
+    "words = ['Words', 'are', 'Longer', 'than', 'n', 'from', 'a', 'given', 'List', 'of', 'Words']\n",
+    "\n",
+    "# Given value of n\n",
+    "n = 4\n",
+    "\n",
+    "longer_words = [word for word in words if len(word) > n]\n",
+    "\n",
+    "print(\"Find the List of Words that are Longer than n from a given List of Words\")\n",
+    "print(\"Given value of n =\", n)\n",
+    "print(longer_words)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "72e4a81f-1ea9-4032-9ed7-07bc86e31d17",
+   "metadata": {},
+   "source": [
+    "### 10. Write a Program that get two lists as input and check if they have at least one common \n",
+    "member \n",
+    "Sample Output \n",
+    "[1,2,3,4,5] \n",
+    "[5,6,7,8,9] \n",
+    "Lists have at least one common member "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "id": "a3c1705c-c03a-4220-b43d-ce67853b5853",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first list of numbers:  1,2,3,4,5\n",
+      "Enter the first list of numbers:  5,6,7,8,9\n"
+     ]
+    }
+   ],
+   "source": [
+    "### Ans =\n",
+    "list1 = input(\"Enter the first list of numbers: \").split(',')\n",
+    "list2 = input(\"Enter the first list of numbers: \").split(',')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "id": "a8d3858d-4b51-413c-a684-e2c9a49d97f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List 1: [1, 2, 3, 4, 5]\n",
+      "List 2: [5, 6, 7, 8, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"List 1:\", list1)\n",
+    "print(\"List 2:\", list2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "id": "fea6bac3-a728-401f-b6da-b68eccf6d00e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Lists have at least one common member\n"
+     ]
+    }
+   ],
+   "source": [
+    "if set(list1) & set(list2):\n",
+    "    print(\"Lists have at least one common member\")\n",
+    "else:\n",
+    "    print(\"Lists do not have any common members\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a57ceef7-4bf5-443f-ba23-7def58f460e4",
+   "metadata": {},
+   "source": [
+    "### 11. Write a Python program to print a specified list after removing the 0th, 4th and 5th \n",
+    "elements. (enumerate) \n",
+    "Sample Output \n",
+    "[\"Cat\", \"Dog\", \"Elephant\", \"Fox\", \"Tiger\", \"Lion\", \"Ponda\"] \n",
+    "['Dog', 'Elephant', 'Fox', 'Ponda'] "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 115,
+   "id": "09ed3393-236a-4a8b-8951-c14612361a6e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Cat', 'Dog', 'Elephant', 'Fox', 'Tiger', 'Lion', 'Ponda']\n"
+     ]
+    }
+   ],
+   "source": [
+    "### Ans = \n",
+    "animals = [\"Cat\", \"Dog\", \"Elephant\", \"Fox\", \"Tiger\", \"Lion\", \"Ponda\"]\n",
+    "print(animals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 116,
+   "id": "8f54c6d0-ebe7-49ba-a3bf-24b9b253d656",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original List: ['Cat', 'Dog', 'Elephant', 'Fox', 'Tiger', 'Lion', 'Ponda']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Original List:\", animals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "id": "a7361647-cf6e-4cff-8e34-42adbdb88559",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "del animals[5]\n",
+    "del animals[4]\n",
+    "del animals[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "id": "9e06203f-6282-4405-981b-72bfc477a47e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "removing oth ,4th & 5th - ['Dog', 'Elephant', 'Fox', 'Ponda']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print ('removing oth ,4th & 5th -' ,animals)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "804d798e-4e54-49f4-abb0-ca860dc591af",
+   "metadata": {},
+   "source": [
+    "### 12. Write a Python program to print the numbers of a specified list after removing even \n",
+    "numbers from it \n",
+    "Sample Output \n",
+    "[7,32,81,20,25,14,23,27] \n",
+    "[7, 81, 25, 23, 27]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "id": "6e572304-004e-4cd9-8460-f14f5bdaaa8e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[7, 32, 81, 20, 25, 14, 23, 27]\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans =\n",
+    "x = [7,32,81,20,25,14,23,27]\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "id": "b97dc97e-c2da-4928-90a5-61170657723e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "odd_numbers =[]\n",
+    "for num in x:\n",
+    "    if num % 2 != 0:\n",
+    "        odd_numbers.append(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "id": "491977d8-5a2f-4ac2-9f75-2c59c080ae87",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "removing even numbers: [7, 81, 25, 23, 27]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"removing even numbers:\", odd_numbers)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2e99009f-bce6-4726-9ba7-3314cc1df1ee",
+   "metadata": {},
+   "source": [
+    "### 13. Write a Python program to shuffle and print a specified list (shuffle) \n",
+    "Sample Output \n",
+    "[\"Cat\", \"Dog\", \"Elephant\", \"Fox\", \"Tiger\", \"Lion\", \"Ponda\"] \n",
+    "['Fox', 'Cat', 'Tiger', 'Lion', 'Dog', 'Ponda', 'Elephant']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "id": "2b596770-8ab9-49a7-9212-060b8c478851",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Cat', 'Dog', 'Elephant', 'Fox', 'Tiger', 'Lion', 'Ponda']\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "my_list = [\"Cat\", \"Dog\", \"Elephant\", \"Fox\", \"Tiger\", \"Lion\", \"Ponda\"]\n",
+    "print(my_list)\n",
+    "print(type(my_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "id": "d26eb6c9-9ad7-45e2-b7e0-180a045ef909",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import random\n",
+    "random.shuffle(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 135,
+   "id": "c5788b79-e28f-47f4-bf9e-ea96f46d1fe6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "shuffle list -  ['Tiger', 'Lion', 'Elephant', 'Ponda', 'Fox', 'Cat', 'Dog']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"shuffle list - \",my_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "703be6af-292c-4b21-9aee-ff0fb68a6c2e",
+   "metadata": {},
+   "source": [
+    "### 14. Write a Python program to generate and print a list of first and last 5 elements where \n",
+    "the values are square of numbers between 1 and 30 \n",
+    "Sample Output \n",
+    "First 5 elements : [1, 4, 9, 16, 25] \n",
+    "Last 5 elements : [625, 676, 729, 784, 841]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 138,
+   "id": "13c441e2-e74a-46cc-a995-7de917de648d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### Ans =\n",
+    "# squares of numbers between 1 and 30\n",
+    "squares = [x**2 for x in range(1, 31)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 142,
+   "id": "cbc819e5-398c-4e54-9219-e98302981642",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list of first five elements -  [1, 4, 9, 16, 25]\n",
+      "list of last five elements - [676, 729, 784, 841, 900]\n"
+     ]
+    }
+   ],
+   "source": [
+    "first_five = squares[:5]\n",
+    "last_five = squares[-5:]\n",
+    "print('list of first five elements - ',first_five)\n",
+    "print('list of last five elements -',last_five)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "aed14679-d089-41bd-b811-d787574f5741",
+   "metadata": {},
+   "source": [
+    "#### 15. Write a Python program to generate all permutations of a list in Python. (itertools) \n",
+    "Sample Output \n",
+    "[1,2,3] \n",
+    "[(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)] \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "id": "2bb2987a-5e79-415e-ad86-1a14c3868a2c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3]\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "a = [1,2,3]\n",
+    "print(a)\n",
+    "print(type(a))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 146,
+   "id": "5ca5f5b1-c675-4bf9-a6b6-09a1079b92e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a1 = a*6\n",
+    "print(a1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 157,
+   "id": "5a0997c9-2868-45c5-af50-b931173faabc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def permute(lst):\n",
+    "    # If the list has only one element, return it as the only permutation\n",
+    "    if len(lst) == 1:\n",
+    "        return [lst]\n",
+    "    \n",
+    "    # List to store all permutations\n",
+    "    result = []\n",
+    "    \n",
+    "    # Loop through each element in the list\n",
+    "    for i in range(len(lst)):\n",
+    "        # Extract the current element\n",
+    "        current = lst[i]\n",
+    "        # Remaining elements\n",
+    "        remaining = lst[:i] + lst[i+1:]\n",
+    "        \n",
+    "        # Generate permutations for the remaining elements\n",
+    "        for perm in permute(remaining):\n",
+    "            # Append current element to the permutations of the remaining elements\n",
+    "            result.append([current] + perm)\n",
+    "    \n",
+    "    return result\n",
+    "\n",
+    "# Given list\n",
+    "my_list = [1, 2, 3]\n",
+    "\n",
+    "# Generate and print all permutations\n",
+    "print(permute(my_list))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7fcb5ac7-861d-4164-9bd3-f82ede38d100",
+   "metadata": {},
+   "source": [
+    "### 16. Write a Python program to convert a list of characters into a string \n",
+    "Sample Output \n",
+    "['T','u','t','o','r',' ','J','o','e','s'] \n",
+    "Tutor Joes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 158,
+   "id": "2463a235-1bed-4068-95c0-c0e4abac2f34",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['T', 'u', 't', 'o', 'r', ' ', 'J', 'o', 'e', 's']\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans =\n",
+    "x = ['T','u','t','o','r',' ','J','o','e','s'] \n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 161,
+   "id": "c13c474b-38f6-4a8f-a853-805cbf8f2700",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Tutor Joes\n"
+     ]
+    }
+   ],
+   "source": [
+    "x1 = ''.join(x)\n",
+    "print(x1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8f0f5282-768b-4fc5-b1c4-4eb670a2a5ae",
+   "metadata": {},
+   "source": [
+    "### 17. Write a Python program to find the index of an item in a specified list \n",
+    "Sample Output \n",
+    "[20, 70, 30, 90, 10, 30, 90, 10, 80] \n",
+    "Item to find the index of 30 \n",
+    "Index Number of Item = 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 162,
+   "id": "e397f07b-b2f7-440e-ad26-33bdd885372a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[20, 70, 30, 90, 10, 30, 90, 10, 80]\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans=\n",
+    "a = [20, 70, 30, 90, 10, 30, 90, 10, 80] \n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 165,
+   "id": "e5ae0125-c440-47b0-9045-6fc5190dd448",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "30"
+      ]
+     },
+     "execution_count": 165,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a[2]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9297db75-15ae-4bca-b18d-70f71df8e478",
+   "metadata": {},
+   "source": [
+    "### 18. Write a Python program to flatten a shallow list \n",
+    "Sample Output \n",
+    "[[20,30,70],[30,90,10], [30,20], [70,90,10,80]] \n",
+    "[20, 30, 70, 30, 90, 10, 30, 20, 70, 90, 10, 80]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 345,
+   "id": "6b1210e6-d022-4f5e-ac86-baf1ec60a701",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[20, 30, 70], [30, 90, 10], [30, 20], [70, 90, 10, 80]]\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans =\n",
+    "shallow_list = [[20, 30, 70], [30, 90, 10], [30, 20], [70, 90, 10, 80]]\n",
+    "print(shallow_list)\n",
+    "print(type(shallow_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 346,
+   "id": "f10d2601-8e88-488c-925c-c355631b1416",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "flattened_list = [item for sublist in shallow_list for item in sublist]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 347,
+   "id": "e278a769-2b79-42b2-b02e-aa44ad308334",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[20, 30, 70, 30, 90, 10, 30, 20, 70, 90, 10, 80]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(flattened_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c756c0f9-4d60-4908-bf66-8b73871c6337",
+   "metadata": {},
+   "source": [
+    "### 19. Write a Python program to add a list to the second list \n",
+    "Sample Output \n",
+    "[10, 20, 30, 40] \n",
+    "[\"Cat\", \"Dog\", \"Lion\", \"Ponda\"] \n",
+    "[10, 20, 30, 40, 'Cat', 'Dog', 'Lion', 'Ponda']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 180,
+   "id": "e8173fdf-14c7-40da-a55b-b42f05be278f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30, 40]\n",
+      "['Cat', 'Dog', 'Lion', 'Ponda']\n"
+     ]
+    }
+   ],
+   "source": [
+    "## ANs = \n",
+    "s1 = [10, 20, 30, 40]\n",
+    "s2 = [\"Cat\", \"Dog\", \"Lion\", \"Ponda\"]\n",
+    "print(s1)\n",
+    "print(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 181,
+   "id": "f5a63c44-f152-42cc-977b-f846d5da1b1c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30, 40, 'Cat', 'Dog', 'Lion', 'Ponda']\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = s1 + s2\n",
+    "print(s)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "55e326d4-b878-4c4c-88e4-9033ad6a36a5",
+   "metadata": {},
+   "source": [
+    "### 20. Write a Python program to select an item randomly from a list Using random.choice() \n",
+    "Sample Output \n",
+    "[\"Cat\", \"Dog\", \"Elephant\", \"Fox\", \"Tiger\", \"Lion\", \"Ponda\"] \n",
+    "Item randomly from a list : Fox"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 183,
+   "id": "3c975c24-7551-4370-a7db-d0cdf9e0924c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Cat', 'Dog', 'Elephant', 'Fox', 'Tiger', 'Lion', 'Ponda']\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "list_animal = [\"Cat\", \"Dog\", \"Elephant\", \"Fox\", \"Tiger\", \"Lion\", \"Ponda\"] \n",
+    "print(list_animal)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 188,
+   "id": "eb2a593d-2574-4969-bf17-601978e0bfdf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Item randomly from a list : Fox\n"
+     ]
+    }
+   ],
+   "source": [
+    "randomly_animal = random.choice(list_animal)\n",
+    "print('Item randomly from a list :' , randomly_animal)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fc47466b-150a-4a8c-97b5-169b31f7e6a2",
+   "metadata": {},
+   "source": [
+    "### 21. Write a python program to check whether two lists are circularly identical \n",
+    "Sample Output \n",
+    "[8, 8, 12, 12, 8] \n",
+    "[8, 8, 8, 12, 12] \n",
+    "[1, 8, 8, 12, 12] \n",
+    "Compare List1 and List2 : True \n",
+    "Compare List1 and List3 : False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 189,
+   "id": "abad0bca-131b-41a5-be0b-a0098145e075",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[8, 8, 12, 12, 8]\n",
+      "[8, 8, 8, 12, 12]\n",
+      "[1, 8, 8, 12, 12]\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "l1 = [8, 8, 12, 12, 8]\n",
+    "l2 = [8, 8, 8, 12, 12]\n",
+    "l3 = [1, 8, 8, 12, 12]\n",
+    "print(l1)\n",
+    "print(l2)\n",
+    "print(l3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 191,
+   "id": "b3a2fad6-d13c-4383-a458-964811689033",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(l1 == l2)\n",
+    "print(l1 == l3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ab5974f9-cc6d-40ec-9426-56ac7ad37483",
+   "metadata": {},
+   "source": [
+    "### 22. Write a Python program to find the second smallest number in a list \n",
+    "Sample Output \n",
+    "[2,4,56,78,4,34,5,8,9] \n",
+    "Second Smallest Number : 4 "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 349,
+   "id": "ce2bdbfd-eeda-471b-82b0-9cd656f9d171",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Second Smallest Number: 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans  = \n",
+    "numbers = [2, 4, 56, 78, 4, 34, 5, 8, 9]\n",
+    "\n",
+    "unique_numbers = sorted(set(numbers))\n",
+    "\n",
+    "# Finding the second smallest number\n",
+    "if len(unique_numbers) >= 2:\n",
+    "    second_smallest = unique_numbers[1]\n",
+    "    print(\"Second Smallest Number:\", second_smallest)\n",
+    "else:\n",
+    "    print(\"List does not have a second unique smallest number.\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "68aa407e-a7a6-44b3-9c98-fc1a4c75ea88",
+   "metadata": {},
+   "source": [
+    "### 23. Write a Python program to find the second largest number in a list \n",
+    "Sample Output \n",
+    "[82,4,56,78,4,34,5,100,9] \n",
+    "Second Largest Number : 82"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 350,
+   "id": "b892d306-08d7-467f-94ec-450467211b8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[82, 4, 56, 78, 4, 34, 5, 100, 9]\n",
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [82,4,56,78,4,34,5,100,9]\n",
+    "print(numbers)\n",
+    "print(type(numbers))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 354,
+   "id": "eaeca24c-7745-4175-90ff-cc9f13c82eae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Second largest Number -  82\n"
+     ]
+    }
+   ],
+   "source": [
+    "unique_numbers = sorted(set(numbers), reverse=True)\n",
+    "\n",
+    "if len(unique_numbers) >= 2:\n",
+    "    second_largest = unique_numbers[1]\n",
+    "    print('Second largest Number - ' , second_largest)\n",
+    "else:\n",
+    "   print(\"List does not have a second unique largest number.\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "830ce939-6a34-4438-a79d-950d09c89c8f",
+   "metadata": {},
+   "source": [
+    "#### 24. Write a Python program to get unique values from a list \n",
+    "Sample Output \n",
+    "[82, 4, 10, 56, 78, 4, 34, 5, 10, 9] \n",
+    "[34, 4, 5, 9, 10, 78, 82, 56] "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e680642f-4e95-48cc-945a-6bc6fe240ceb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## ANs = "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 220,
+   "id": "f543d53e-f249-4b36-bdf3-71b8ef88ef98",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[82, 4, 10, 56, 78, 4, 34, 5, 10, 9]\n",
+      "[34, 4, 5, 9, 10, 78, 82, 56]\n"
+     ]
+    }
+   ],
+   "source": [
+    "m1 = [82, 4, 10, 56, 78, 4, 34, 5, 10, 9]\n",
+    "m2 = [34, 4, 5, 9, 10, 78, 82, 56]\n",
+    "print(m1)\n",
+    "print(m2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 221,
+   "id": "1588a36d-e55f-4b42-9ab5-30a70e45f359",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[82, 4, 10, 56, 78, 4, 34, 5, 10, 9, 34, 4, 5, 9, 10, 78, 82, 56]\n"
+     ]
+    }
+   ],
+   "source": [
+    "m = m1 + m2\n",
+    "print(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 223,
+   "id": "50c6f113-c2b7-4440-be4c-c1364cf531e8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "unique_values = []"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 225,
+   "id": "89588a53-51e0-43cd-8620-b521d8e5ff66",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "unique_values- [82, 4, 10, 56, 78, 34, 5, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "for num in m:\n",
+    "    if num not in unique_values:\n",
+    "        unique_values.append(num)\n",
+    "print('unique_values-',unique_values)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "232631bd-8c61-44ca-b55c-0a76baaf20ab",
+   "metadata": {},
+   "source": [
+    "#### 25. Write a Python program to get the frequency of the elements in a list. \n",
+    "Sample Output \n",
+    "[10, 30, 50, 10, 20, 60, 20, 60, 40, 40, 50, 50, 30] \n",
+    "Counter({50: 3, 10: 2, 30: 2, 20: 2, 60: 2, 40: 2})"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 226,
+   "id": "d7009ef8-f54a-49a2-85b0-fb7afe632b8a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Ans = \n",
+    "from collections import Counter"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 355,
+   "id": "bb16dd27-fb6c-4b97-81a3-218c12272552",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 30, 50, 10, 20, 60, 20, 60, 40, 40, 50, 50, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a4 = [10, 30, 50, 10, 20, 60, 20, 60, 40, 40, 50, 50, 30]\n",
+    "print(a4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 233,
+   "id": "eac1e468-e50e-4261-894e-2929d8f3492e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Counter({50: 3, 10: 2, 30: 2, 20: 2, 60: 2, 40: 2})\n"
+     ]
+    }
+   ],
+   "source": [
+    "frequency = Counter(a4)\n",
+    "print(frequency)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f38a34ad-6d8f-4ccc-b501-820b74ac109d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#### 26. Create a list by concatenating a given list which range goes from 1 to n \n",
+    "Sample Output \n",
+    "['T', 'J'] \n",
+    "N = 10 \n",
+    "['T1', 'J1', 'T2', 'J2', 'T3', 'J3', 'T4', 'J4', 'T5', 'J5', 'T6', 'J6', 'T7', 'J7', 'T8', 'J8', 'T9', 'J9', 'T10', 'J10']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 248,
+   "id": "d6d0b9e4-ea90-4b0e-8297-f311bbd9c9d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Resulting List: ['T1', 'J1', 'T2', 'J2', 'T3', 'J3', 'T4', 'J4', 'T5', 'J5', 'T6', 'J6', 'T7', 'J7', 'T8', 'J8', 'T9', 'J9', 'T10', 'J10']\n"
+     ]
+    }
+   ],
+   "source": [
+    "### Ans = \n",
+    "\n",
+    "given_list = ['T', 'J']\n",
+    "\n",
+    "N = 10\n",
+    "\n",
+    "result_list = []\n",
+    "\n",
+    "for i in range(1, N + 1):\n",
+    "    for item in given_list:\n",
+    "        result_list.append(f\"{item}{i}\")\n",
+    "\n",
+    "print(\"Resulting List:\", result_list)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "84f19f8c-be3e-49f9-925d-9504b53d7b3b",
+   "metadata": {},
+   "source": [
+    "### 27. Write a Python program to get variable unique identification number or string \n",
+    "Sample Output \n",
+    "x = 30 \n",
+    "s = \"Tutor Joes\" \n",
+    "Unique Identification Number : 7005f980 \n",
+    "Unique Identification String : c24bb0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 356,
+   "id": "394e61e1-1852-493e-a2a0-a26cc7719737",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "30\n",
+      "Tutor Joes\n",
+      "140723527403208\n",
+      "1875829544944\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 30 \n",
+    "s = 'Tutor Joes'\n",
+    "print(x)\n",
+    "print(s)\n",
+    "x1 = id(x)\n",
+    "s1 = id(s)\n",
+    "print(x1)\n",
+    "print(s1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "814e371d-10f2-4f6d-9559-8de4c35554e4",
+   "metadata": {},
+   "source": [
+    "### 28. Write a Python program to find common items from two lists \n",
+    "Sample Output \n",
+    "[23,45,67,78,89,34] \n",
+    "[34,89,55,56,39,67] \n",
+    "Common items from two lists : {89, 34, 67}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 251,
+   "id": "1fed9bd0-b87d-453e-8ffb-dbf33755c811",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[23, 45, 67, 78, 89, 34]\n",
+      "[34, 89, 55, 56, 39, 67]\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "p1 = [23,45,67,78,89,34]\n",
+    "p2 = [34,89,55,56,39,67]\n",
+    "print(p1)\n",
+    "print(p2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 260,
+   "id": "d7138aa7-8e2d-499b-83b7-d440ed7913b9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "common_item =[]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 262,
+   "id": "51a58302-0896-4823-8a30-36e0085cb123",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item  in p1:\n",
+    "    if item in p2:\n",
+    "        common_item.append(item)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 266,
+   "id": "2fecea14-aa4a-4350-94ab-dc6016ae5bc2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Common items from two lists: [67, 67, 89, 34]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Common items from two lists:\", common_item)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "24a6a066-2a1b-468e-b3e3-5167e3451e75",
+   "metadata": {},
+   "source": [
+    "### 29. Write a Python program to split a list based on first character of word \n",
+    "Sample Output \n",
+    "[\"cat\", \"dog\", \"cow\", \"tiger\", \"lion\", \"Fox\", \"Shark\", \"Snake\", \"turtle\", \"mouse\", \"monkey\", \n",
+    "\"bear\"] \n",
+    "F \n",
+    "     Fox \n",
+    "S \n",
+    "     Shark \n",
+    "     Snake \n",
+    "b \n",
+    "     bear \n",
+    "c \n",
+    "     cat \n",
+    " \n",
+    "     cow \n",
+    "d \n",
+    "     dog \n",
+    "l \n",
+    "     lion \n",
+    "m \n",
+    "     monkey \n",
+    "     mouse \n",
+    "t \n",
+    "     tiger \n",
+    "     turtle"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 267,
+   "id": "2b9e5863-2bd5-4c1a-957e-2a0886bdfc83",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['cat', 'dog', 'cow', 'tiger', 'lion', 'Fox', 'Shark', 'Snake', 'turtle', 'mouse', 'monkey', 'bear']\n"
+     ]
+    }
+   ],
+   "source": [
+    "### Ans = \n",
+    "words = [\"cat\", \"dog\", \"cow\", \"tiger\", \"lion\", \"Fox\", \"Shark\", \"Snake\",\"turtle\", \"mouse\", \"monkey\", \"bear\"]\n",
+    "print(words)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 364,
+   "id": "6c9d1323-a3d1-4bea-b109-1f7b5905d2db",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "b\n",
+      "    bear\n",
+      "c\n",
+      "    cat\n",
+      "    cow\n",
+      "d\n",
+      "    dog\n",
+      "f\n",
+      "    Fox\n",
+      "l\n",
+      "    lion\n",
+      "m\n",
+      "    monkey\n",
+      "    mouse\n",
+      "s\n",
+      "    Shark\n",
+      "    Snake\n",
+      "t\n",
+      "    tiger\n",
+      "    turtle\n"
+     ]
+    }
+   ],
+   "source": [
+    "words_sorted = sorted(words, key=str.lower)\n",
+    "\n",
+    "# Variable to store the current starting letter\n",
+    "current_letter = \"\"\n",
+    "\n",
+    "# Loop through sorted words and group them by the first character\n",
+    "for word in words_sorted:\n",
+    "    # Get the first character of the word (case-insensitive comparison)\n",
+    "    first_char = word[0].lower()\n",
+    "    \n",
+    "    # Check if the first character has changed\n",
+    "    if first_char != current_letter:\n",
+    "        current_letter = first_char\n",
+    "        print(current_letter)  # Print the new letter\n",
+    "    print(\"    \" + word)  # Print the word with indentation"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c89d2603-40f4-4f92-aa66-5dc155edf212",
+   "metadata": {
+    "scrolled": true
+   },
+   "source": [
+    "### 30. Write a Python program to select the odd number of a list \n",
+    "Sample Output \n",
+    "[1,2,4,3,6,7,5,8,9,7,8,9,10] \n",
+    "[1, 3, 7, 5, 9, 7, 9]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 279,
+   "id": "0e324365-8cbe-4d8f-8d91-ceb35e230304",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 4, 3, 6, 7, 5, 8, 9, 7, 8, 9, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "### Ans = \n",
+    "q = [1,2,4,3,6,7,5,8,9,7,8,9,10]\n",
+    "print(q)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 282,
+   "id": "15a9eacd-e31c-45cd-a9b6-957d709c3a10",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "odd_numbers = [num for num in q if num % 2 != 0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 283,
+   "id": "c1ae2c2f-14c6-4129-a372-05e40e475f98",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original List: [1, 2, 4, 3, 6, 7, 5, 8, 9, 7, 8, 9, 10]\n",
+      "Odd Numbers: [1, 3, 7, 5, 9, 7, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Original List:\", q)\n",
+    "print(\"Odd Numbers:\", odd_numbers)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d0603ac0-f97d-4f64-b394-d27d8079f158",
+   "metadata": {},
+   "source": [
+    "### 31. Write a Python Program to count unique values inside a list \n",
+    "Sample Output \n",
+    "[10, 20, 30, 50, 80, 70, 70, 80, 10] \n",
+    "No of Unique Items in List : 6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 284,
+   "id": "88744103-b42f-409a-aad3-da4ef1cf97fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30, 50, 80, 70, 70, 80, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans  =\n",
+    "numbers = [10, 20, 30, 50, 80, 70, 70, 80, 10]\n",
+    "print(numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 291,
+   "id": "b1c077df-edfe-4311-89b0-b1b7f7ef8405",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9"
+      ]
+     },
+     "execution_count": 291,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 292,
+   "id": "2607f8e9-a806-4367-bb57-ba2287a87a01",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{70, 10, 80, 50, 20, 30}\n"
+     ]
+    }
+   ],
+   "source": [
+    "unique_values =set(numbers)\n",
+    "print(unique_values)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 293,
+   "id": "7e2acb02-1632-4726-9408-32522f406138",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "unique_count = len(unique_values)\n",
+    "print(unique_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 294,
+   "id": "e1d05b31-d55a-459a-96ff-933ea22d17d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "No of Unique Items in List: 6\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"No of Unique Items in List:\", unique_count)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "68c295fc-5368-4754-84ee-2a6846d5af05",
+   "metadata": {},
+   "source": [
+    "### 32. Write a Python Program to List product excluding duplicates \n",
+    "Sample Output \n",
+    "[2, 1, 2, 4, 6, 4, 3, 2, 1] \n",
+    "Duplication removal list product : 144"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 295,
+   "id": "42fb44f1-2d30-4e09-bc39-615d424767a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 1, 2, 4, 6, 4, 3, 2, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "n = [2, 1, 2, 4, 6, 4, 3, 2, 1]\n",
+    "print(n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 296,
+   "id": "5f181ebc-1c1f-4453-a8e4-4a823425a567",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9"
+      ]
+     },
+     "execution_count": 296,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 298,
+   "id": "42e97e99-561f-450b-a5a4-e263ccd7c8ab",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "unique_values =set(n)\n",
+    "print(unique_values)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 299,
+   "id": "e11f1d62-f75e-4719-bea8-6a5057ae01d6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Duplication removal list product -  144\n"
+     ]
+    }
+   ],
+   "source": [
+    " product= math.prod(unique_values)\n",
+    "print('Duplication removal list product - ',product)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e76552f9-8176-45f5-9c29-a186ea5c3b4d",
+   "metadata": {},
+   "source": [
+    "### 33. Write a Python Program to Extract elements with Frequency greater than K \n",
+    "Sample Output \n",
+    "[4, 6, 4, 3, 3, 4, 3, 7, 8, 8]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 300,
+   "id": "a5200a3f-e72d-4e76-bc07-ad699731971a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4, 6, 4, 3, 3, 4, 3, 7, 8, 8]\n"
+     ]
+    }
+   ],
+   "source": [
+    "d = [4, 6, 4, 3, 3, 4, 3, 7, 8, 8]\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 306,
+   "id": "a4448ce7-8a12-48f3-9680-550f17391831",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Elements with frequency greater than 2: [4, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "K =2\n",
+    "result = []\n",
+    "for num in d:\n",
+    "    if d.count(num) > K and num not in result:\n",
+    "         result.append(num)\n",
+    "print(f\"Elements with frequency greater than {K}:\", result)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b697495d-ca35-4071-9e6c-1c9170d05790",
+   "metadata": {},
+   "source": [
+    "### 34. Write a Python Program to Test if List contains elements in Range \n",
+    "Sample Output \n",
+    "[4, 5, 6, 7, 3, 9] \n",
+    "Does list contain all elements in range : True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 307,
+   "id": "9ce7c97e-fda7-4a72-a403-4688956f9297",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4, 5, 6, 7, 3, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "z = [4, 5, 6, 7, 3, 9]\n",
+    "print(z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 311,
+   "id": "3f6ceb90-4481-44cd-ae89-0b3ef2732136",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "start = 3\n",
+    "end = 9\n",
+    "print(start)\n",
+    "print(end)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 313,
+   "id": "5519dade-9277-46a3-8787-dafcabbf114d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "list_set = set(z)\n",
+    "range_set = set(range(start, end + 1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 314,
+   "id": "5921bf4b-1c7b-49d7-acf9-0bbc330eae98",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "is_in_range = range_set.issubset(list_set)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 315,
+   "id": "9784ca39-d26f-4262-93d5-75e364b2ef07",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Does list contain all elements in range 3 to 9: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"Does list contain all elements in range {start} to {end}: {is_in_range}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "73bfc322-334b-48e2-a1de-300101bf74ee",
+   "metadata": {},
+   "source": [
+    "### 35. Write a Python program to check if the list contains three consecutive common \n",
+    "numbers in Python \n",
+    "Sample Output \n",
+    "[18, 18, 18, 6, 3, 4, 9, 9, 9] \n",
+    "Three Consecutive common numbers = 18, 9"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 366,
+   "id": "beb8ed6f-c5c5-423a-b540-45a3c618c18b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[18, 18, 18, 6, 3, 4, 9, 9, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [18, 18, 18, 6, 3, 4, 9, 9, 9]\n",
+    "print(numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 317,
+   "id": "7db96541-ca11-4975-a673-4391d89e92d8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "consecutive_numbers = []"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f3cafa93-7838-4d62-8a71-795e5fcc7afb",
+   "metadata": {},
+   "source": [
+    "### 36. Write a Python program to find the Strongest Neighbour \r\n",
+    "Sample Output \r\n",
+    "[10,20,30,20,30,400] \r\n",
+    "20 30 30 30 400"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 326,
+   "id": "1792b83d-9a93-45bc-9b85-ce7d608299ad",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "30 20 30 400\n"
+     ]
+    }
+   ],
+   "source": [
+    "####Ans ==\n",
+    "def find_strongest_neighbors(arr):\n",
+    "    strongest_neighbors = []\n",
+    "\n",
+    "    for i in range(1, len(arr) - 1):\n",
+    "        strongest = max(arr[i - 1], arr[i + 1])\n",
+    "        strongest_neighbors.append(strongest)\n",
+    "\n",
+    "    return strongest_neighbors\n",
+    "\n",
+    "input_array = [10, 20, 30, 20, 30, 400]\n",
+    "\n",
+    "output = find_strongest_neighbors(input_array)\n",
+    "print(' '.join(map(str, output)))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a745dcaa-6865-4042-b0da-7638884ad902",
+   "metadata": {},
+   "source": [
+    "### 37. Write a Python Program to print all Possible Combinations from the three Digits \n",
+    "Sample Output \n",
+    "[1, 2, 3] \n",
+    "1 2 3 \n",
+    " \n",
+    "1 3 2 \n",
+    "2 1 3 \n",
+    "2 3 1 \n",
+    "3 1 2 \n",
+    "3 2 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 328,
+   "id": "ebd51906-835b-4b7c-b1d5-75f74915c6d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2 3\n",
+      "1 3 2\n",
+      "2 1 3\n",
+      "2 3 1\n",
+      "3 2 1\n",
+      "3 1 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans -\n",
+    "def generate_permutations(nums, start=0):\n",
+    "    if start == len(nums) - 1:\n",
+    "        print(' '.join(map(str, nums)))\n",
+    "    else:\n",
+    "        for i in range(start, len(nums)):\n",
+    "            nums[start], nums[i] = nums[i], nums[start]\n",
+    "            generate_permutations(nums, start + 1)\n",
+    "            nums[start], nums[i] = nums[i], nums[start]\n",
+    "\n",
+    "input_digits = [1, 2, 3]\n",
+    "\n",
+    "generate_permutations(input_digits)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b777b68a-8860-42ff-99b0-bd755d47f6e4",
+   "metadata": {},
+   "source": [
+    "### 38. Write a Python program to find all the Combinations in the list with the given condition \n",
+    "Sample Output \n",
+    "['Tutor Joes', ['Software', 'Computer'], ['Solution', 'Education']] \n",
+    "[ ['Tutor Joes', 'Software', 'Solution'], ['Tutor Joes', 'Computer', 'Education'] ]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d4cf0a4b-6a90-4e8d-b1fe-a5c8fe981fe0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Ans = "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 324,
+   "id": "4dfc9658-c42a-426c-bf78-27811177fd8c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[['Tutor Joes', 'Software', 'Solution'], ['Tutor Joes', 'Software', 'Education'], ['Tutor Joes', 'Computer', 'Solution'], ['Tutor Joes', 'Computer', 'Education']]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def find_combinations(data):\n",
+    "    if not data or len(data) < 2:\n",
+    "        return []\n",
+    "\n",
+    "    first_element = data[0]\n",
+    "    lists = data[1:]\n",
+    "\n",
+    "    result = []\n",
+    "\n",
+    "    for item1 in lists[0]:\n",
+    "        for item2 in lists[1]:\n",
+    "            result.append([first_element, item1, item2])\n",
+    "\n",
+    "    return result\n",
+    "\n",
+    "input_data = ['Tutor Joes', ['Software', 'Computer'], ['Solution', 'Education']]\n",
+    "\n",
+    "output_combinations = find_combinations(input_data)\n",
+    "\n",
+    "print(output_combinations)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3c0fe1c7-fba6-4e64-b7e9-db9a74b2c3df",
+   "metadata": {},
+   "source": [
+    "### 39. Write a Python program to get all unique combinations of two Lists \n",
+    "Sample Output \n",
+    "['A','B','C'] \n",
+    "[1,2,3] \n",
+    "[ [('A', 1), ('B', 2), ('C', 3)], [('A', 1), ('C', 2), ('B', 3)], [('B', 1), ('A', 2), ('C', 3)], [('B', 1), ('C', 2), ('A', 3)], \n",
+    "[('C', 1), ('A', 2), ('B', 3)], [('C', 1), ('B', 2), ('A', 3)] ]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fc594f88-c38d-4ee2-a972-bd74cbb8f95e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### Ans = "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 330,
+   "id": "60ea6bb9-102c-4219-a809-6f52ba074056",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[(('A', 1), ('A', 2)), (('A', 1), ('A', 3)), (('A', 1), ('B', 1)), (('A', 1), ('B', 2)), (('A', 1), ('B', 3)), (('A', 1), ('C', 1)), (('A', 1), ('C', 2)), (('A', 1), ('C', 3)), (('A', 2), ('A', 1)), (('A', 2), ('A', 3)), (('A', 2), ('B', 1)), (('A', 2), ('B', 2)), (('A', 2), ('B', 3)), (('A', 2), ('C', 1)), (('A', 2), ('C', 2)), (('A', 2), ('C', 3)), (('A', 3), ('A', 1)), (('A', 3), ('A', 2)), (('A', 3), ('B', 1)), (('A', 3), ('B', 2)), (('A', 3), ('B', 3)), (('A', 3), ('C', 1)), (('A', 3), ('C', 2)), (('A', 3), ('C', 3)), (('B', 1), ('A', 1)), (('B', 1), ('A', 2)), (('B', 1), ('A', 3)), (('B', 1), ('B', 2)), (('B', 1), ('B', 3)), (('B', 1), ('C', 1)), (('B', 1), ('C', 2)), (('B', 1), ('C', 3)), (('B', 2), ('A', 1)), (('B', 2), ('A', 2)), (('B', 2), ('A', 3)), (('B', 2), ('B', 1)), (('B', 2), ('B', 3)), (('B', 2), ('C', 1)), (('B', 2), ('C', 2)), (('B', 2), ('C', 3)), (('B', 3), ('A', 1)), (('B', 3), ('A', 2)), (('B', 3), ('A', 3)), (('B', 3), ('B', 1)), (('B', 3), ('B', 2)), (('B', 3), ('C', 1)), (('B', 3), ('C', 2)), (('B', 3), ('C', 3)), (('C', 1), ('A', 1)), (('C', 1), ('A', 2)), (('C', 1), ('A', 3)), (('C', 1), ('B', 1)), (('C', 1), ('B', 2)), (('C', 1), ('B', 3)), (('C', 1), ('C', 2)), (('C', 1), ('C', 3)), (('C', 2), ('A', 1)), (('C', 2), ('A', 2)), (('C', 2), ('A', 3)), (('C', 2), ('B', 1)), (('C', 2), ('B', 2)), (('C', 2), ('B', 3)), (('C', 2), ('C', 1)), (('C', 2), ('C', 3)), (('C', 3), ('A', 1)), (('C', 3), ('A', 2)), (('C', 3), ('A', 3)), (('C', 3), ('B', 1)), (('C', 3), ('B', 2)), (('C', 3), ('B', 3)), (('C', 3), ('C', 1)), (('C', 3), ('C', 2))]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def get_unique_combinations(list1, list2):\n",
+    "    unique_combinations = []\n",
+    "\n",
+    "    for elem1 in list1:\n",
+    "        for elem2 in list2:\n",
+    "            unique_combinations.append((elem1, elem2))\n",
+    "\n",
+    "    unique_permutations = []\n",
+    "\n",
+    "    for i in range(len(unique_combinations)):\n",
+    "        for j in range(len(unique_combinations)):\n",
+    "            if i != j:  \n",
+    "                permutation = (unique_combinations[i], unique_combinations[j])\n",
+    "                if permutation not in unique_permutations:\n",
+    "                    unique_permutations.append(permutation)\n",
+    "\n",
+    "    return unique_permutations\n",
+    "\n",
+    "list1 = ['A', 'B', 'C']\n",
+    "list2 = [1, 2, 3]\n",
+    "\n",
+    "output_combinations = get_unique_combinations(list1, list2)\n",
+    "\n",
+    "print(output_combinations)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "992a9db7-1d24-46bc-aa40-75478aabb054",
+   "metadata": {},
+   "source": [
+    "### 40. Write a Python program to remove all the occurrences of an element from a list \n",
+    "Sample Output \n",
+    "[1, 3, 4, 6, 5, 1] \n",
+    "[3, 4, 6, 5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 331,
+   "id": "d794325c-c9b3-4586-a4f5-7fe96fbc5f1c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 4, 6, 5, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a =[1, 3, 4, 6, 5, 1] \n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 334,
+   "id": "f1de778b-becf-40f9-8b25-868562ea395d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a.remove(1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 336,
+   "id": "cb086c30-17d5-406e-a27a-725af149514b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a.remove(1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 337,
+   "id": "0ac53c94-accc-482e-9ed4-e66b1c6d088f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[3, 4, 6, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f2b090a8-d8d2-4d09-82ca-dcea918a6ad4",
+   "metadata": {},
+   "source": [
+    "### 41. Write a Python Program to Remove Consecutive K element records \n",
+    " \n",
+    "Sample Output \n",
+    "[ ('A', 'B', 'C', 'D'), ('B', 'C', 'C', 'I'), ('H', 'D', 'B', 'C'), ('C', 'C', 'G', 'F') ] \n",
+    "[ ('A', 'B', 'C', 'D'), ('H', 'D', 'B', 'C') ]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 371,
+   "id": "87489ceb-796a-49e8-a465-3d8e7198c162",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[('A', 'B', 'C', 'D'), ('B', 'C', 'C', 'I'), ('H', 'D', 'B', 'C'), ('C', 'C', 'G', 'F')]\n"
+     ]
+    }
+   ],
+   "source": [
+    "records = [('A', 'B', 'C', 'D'),  ('B', 'C', 'C', 'I'),   ('H', 'D', 'B', 'C'),  ('C', 'C', 'G', 'F')]\n",
+    "print(records)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 377,
+   "id": "8b2f21b6-136c-4b37-bfeb-baf39a75d89f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "filtered_records = []"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 379,
+   "id": "97fe07d4-5107-4a22-bafb-09fb3f79f844",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[('A', 'B', 'C', 'D'), ('H', 'D', 'B', 'C'), ('A', 'B', 'C', 'D')]\n",
+      "[('A', 'B', 'C', 'D'), ('H', 'D', 'B', 'C'), ('A', 'B', 'C', 'D'), ('H', 'D', 'B', 'C')]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def has_consecutive_elements(tup):\n",
+    "    for i in range(len(tup) - 1):\n",
+    "        if tup[i] == tup[i + 1]:\n",
+    "            return True\n",
+    "    return False\n",
+    "for tup in records:\n",
+    "    if not has_consecutive_elements(tup):\n",
+    "        filtered_records.append(tup)\n",
+    "        print(filtered_records)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "87a70f0f-8be4-46ec-8404-4657a61c739d",
+   "metadata": {},
+   "source": [
+    "### 42. Write a Python Program to Replace index elements with elements in Other List \n",
+    "Sample Output \n",
+    "['Tutor Joes', 'Computer', 'Education'] \n",
+    "[2, 1, 0, 1, 0, 2, 2, 0, 1, 0, 1, 2] \n",
+    "['Education', 'Computer', 'Tutor Joes', 'Computer', 'Tutor Joes', 'Education', 'Education', 'Tutor Joes', 'Computer', 'Tutor Joes', 'Computer','Education']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 382,
+   "id": "81282e4d-9055-4b98-ba22-0086512df763",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Education', 'Computer', 'Tutor Joes', 'Computer', 'Tutor Joes', 'Education', 'Education', 'Tutor Joes', 'Computer', 'Tutor Joes', 'Computer', 'Education']\n"
+     ]
+    }
+   ],
+   "source": [
+    "##Ans = \n",
+    "elements = ['Tutor Joes', 'Computer', 'Education']\n",
+    "indices = [2, 1, 0, 1, 0, 2, 2, 0, 1, 0, 1, 2]\n",
+    "\n",
+    "replaced_list = [elements[i] for i in indices]\n",
+    "\n",
+    "print(replaced_list)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "34d15757-598e-4cce-84d7-88da43422ac5",
+   "metadata": {},
+   "source": [
+    "### 43. Write a Python Program to Retain records with N occurrences of K \n",
+    "Sample Output \n",
+    "[ (4, 5, 6, 5, 4), (4, 5, 3), (5, 5, 2), (3, 4, 9) ] \n",
+    "K = 5 \n",
+    "N = 2 \n",
+    "[ (4, 5, 6, 5, 4), (5, 5, 2) ]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4cb43c04-3884-4f9b-a6ba-8498163ce823",
+   "metadata": {},
+   "source": [
+    "### 44. Write a Python Program to Swap elements in String list \n",
+    "Sample Output \n",
+    "['Tutor', 'joes', 'Computer', 'Education'] \n",
+    "['Tutor', \"Joe's\", 'Software', 'Solutions']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e1de58cf-52c2-4623-90a1-fcac424396ed",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Ans ="
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 340,
+   "id": "13becb3f-4571-4605-acba-1e827b3990fc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Swapped List: ['Tutor', 'Computer', 'joes', 'Education']\n",
+      "Additional Swapped List: ['Tutor', 'Solutions', 'Software', \"Joe's\"]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def swap_elements(string_list, index1, index2):\n",
+    "    swapped_list = string_list.copy()\n",
+    "\n",
+    "    swapped_list[index1], swapped_list[index2] = swapped_list[index2], swapped_list[index1]\n",
+    "\n",
+    "    return swapped_list\n",
+    "\n",
+    "original_list = ['Tutor', 'joes', 'Computer', 'Education']\n",
+    "index1 = 1  # 'joes'\n",
+    "index2 = 2  # 'Computer'\n",
+    "\n",
+    "swapped_list = swap_elements(original_list, index1, index2)\n",
+    "\n",
+    "print(\"Swapped List:\", swapped_list)\n",
+    "    \n",
+    "additional_list = ['Tutor', \"Joe's\", 'Software', 'Solutions']\n",
+    "index1 = 1  # \"Joe's\"\n",
+    "index2 = 3  # 'Solutions'\n",
+    "\n",
+    "additional_swapped_list = swap_elements(additional_list, index1, index2)\n",
+    "\n",
+    "print(\"Additional Swapped List:\", additional_swapped_list)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9e2f5fca-406c-4117-95ce-74b4b66850cc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### 45. Write a Python program to reverse All Strings in String List \n",
+    " \n",
+    "Sample Output \n",
+    "Original list = ['Tutor', 'joes', 'Computer', 'Education'] \n",
+    "Reversed list = ['rotuT', 'seoj', 'retupmoC', 'noitacudE'] \n",
+    "Reversed list = ['Education', 'Computer', 'joes', 'Tutor']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "17ac2583-3a0a-4007-aae8-e32a7c5648d1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### ANs ="
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 342,
+   "id": "88e43c60-b0a3-4078-baaa-94ca0d1d1d0f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Reversed list = ['rotuT', 'seoj', 'retupmoC', 'noitacudE']\n",
+      "Reversed list = ['noitacudE', 'retupmoC', 'seoj', 'rotuT']\n"
+     ]
+    }
+   ],
+   "source": [
+    "def reverse_strings_in_list(string_list):\n",
+    "    return [s[::-1] for s in string_list]\n",
+    "\n",
+    "original_list1 = ['Tutor', 'joes', 'Computer', 'Education']\n",
+    "reversed_list1 = reverse_strings_in_list(original_list1)\n",
+    "\n",
+    "print(\"Reversed list =\", reversed_list1)\n",
+    "\n",
+    "original_list2 = ['Education', 'Computer', 'joes', 'Tutor']\n",
+    "reversed_list2 = reverse_strings_in_list(original_list2)\n",
+    "\n",
+    "# Print the output\n",
+    "print(\"Reversed list =\", reversed_list2)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "83cca6b2-01c5-49a1-a3a9-9666bbb007e3",
+   "metadata": {},
+   "source": [
+    "### 46. Write a Python program to find the character position of Kth word from a list of strings \n",
+    "Sample Output \n",
+    "['Tutor', 'joes', 'Computer', 'Education'] \n",
+    "K = 20 \n",
+    "Index of character at Kth position word: 3"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "718d1024-72cb-44ac-ad29-fe3839b36b02",
+   "metadata": {},
+   "source": [
+    "### 47. Write a Python Program to Prefix frequency in string List \n",
+    "Sample Output \n",
+    "['TjC', 'TjCpp', 'TjPython', 'Java'] \n",
+    "Prefix = 'Tj' \n",
+    "Strings count with matching frequency : 3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 386,
+   "id": "b96adad4-c732-4125-a819-5be90b827ab8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Strings count with matching frequency: 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans =\n",
+    "# Sample list of strings\n",
+    "strings = ['TjC', 'TjCpp', 'TjPython', 'Java']\n",
+    "\n",
+    "prefix = 'Tj'\n",
+    "\n",
+    "count = sum(1 for s in strings if s.startswith(prefix))\n",
+    "\n",
+    "print(f\"Strings count with matching frequency: {count}\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c2b967b4-e81b-4d12-82a9-fe8413291f59",
+   "metadata": {},
+   "source": [
+    "### 48. Write a Python Program to Split Strings on Prefix Occurrence \n",
+    "Sample Output \n",
+    "['TjC', 'TjCpp', 'TjPython', 'Java', 'tj'] \n",
+    "Prefix = 'Tj' \n",
+    "[ ['TjC'], ['TjCpp'], ['TjPython', 'Java', 'tj'] ] "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 388,
+   "id": "2230e733-7d8c-4af0-bacb-7233d9c4ecf4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['TjC', 'TjCpp', 'TjPython', 'Java', 'tj']\n"
+     ]
+    }
+   ],
+   "source": [
+    "### Ans = \n",
+    "strings = ['TjC', 'TjCpp', 'TjPython', 'Java', 'tj']\n",
+    "print(strings)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 389,
+   "id": "f4a850a4-4a0e-49db-88ca-dbc98385d79a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "prefix = 'Tj'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 405,
+   "id": "355960d5-9010-4156-9db2-2f9a190f0d4f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[['TjC', 'TjCpp', 'TjPython'], ['Java'], ['tj']]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Sample list of strings\n",
+    "strings = ['TjC', 'TjCpp', 'TjPython', 'Java', 'tj']\n",
+    "\n",
+    "prefix = 'Tj'\n",
+    "\n",
+    "result = []\n",
+    "current_group = []\n",
+    "\n",
+    "for s in strings:\n",
+    "    if s.startswith(prefix):\n",
+    "        current_group.append(s)\n",
+    "    else:\n",
+    "        if current_group:\n",
+    "            result.append(current_group)\n",
+    "            current_group = []  \n",
+    "        result.append([s])\n",
+    "\n",
+    "if current_group:\n",
+    "    result.append(current_group)\n",
+    "\n",
+    "print(result)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bb43dbf9-4c04-4f9f-94d2-63b51575c1e8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### 49. Write a Python program to Replace all Characters of a List Except the given character \n",
+    " \n",
+    "Sample Output \n",
+    "['P', 'Y', 'T', 'H', 'O', 'N'] \n",
+    "['@', '@', 'T', '@', '@', '@']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 406,
+   "id": "58ea3f38-9e52-4ab9-9c96-66cf5464e63e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['P', 'Y', 'T', 'H', 'O', 'N']\n"
+     ]
+    }
+   ],
+   "source": [
+    "### Ans =\n",
+    "characters = ['P', 'Y', 'T', 'H', 'O', 'N']\n",
+    "print(characters)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 407,
+   "id": "435f525c-a9f5-47ea-82e5-26982c2fcc38",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "retain_char = 'T'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 409,
+   "id": "961097a7-f226-4ad9-810c-b43ec4902a9d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['@', '@', 'T', '@', '@', '@']\n"
+     ]
+    }
+   ],
+   "source": [
+    "replaced_characters = [c if c == retain_char else '@' for c in characters]\n",
+    "print(replaced_characters)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a223d90f-88d8-4c96-9b16-6e2c0704f0b4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### 50. Write a Python Program to Add Space between Potential Words \n",
+    "Sample Output \n",
+    "['TutorJoes', 'ComputerEducations'] \n",
+    "[' Tutor Joes', ' Computer Educations']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 410,
+   "id": "756e37c8-f5e5-40bb-83e7-71b914ab5415",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Tutor Joes', 'Computer Educations']\n"
+     ]
+    }
+   ],
+   "source": [
+    "## Ans = \n",
+    "words = ['TutorJoes', 'ComputerEducations']\n",
+    "\n",
+    "def add_spaces(word_list):\n",
+    "    spaced_words = []\n",
+    "    \n",
+    "    for word in word_list:\n",
+    "        spaced_word = \"\"\n",
+    "        for char in word:\n",
+    "            if char.isupper() and spaced_word:\n",
+    "                spaced_word += ' '  \n",
+    "            spaced_word += char  \n",
+    "        spaced_words.append(spaced_word)  \n",
+    "    return spaced_words\n",
+    "\n",
+    "result = add_spaces(words)\n",
+    "\n",
+    "print(result)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d8d544c0-b3da-42fd-bd2b-ba4ca72a1e12",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0d1814d8-fc72-461e-8185-45ed187e775c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "447c08d5-e7c4-410a-a532-c4c69adb68e5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
